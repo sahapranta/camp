@@ -28,7 +28,7 @@ var campgroundRoutes = require("./routes/campgrounds"),
     authRoutes       = require("./routes/index")
     
 mongoose.Promise = global.Promise;
-mongoose.connect('process.env.hksDB');
+mongoose.connect('mongodb://hksamacar:samacar@ds149844.mlab.com:49844/hksamacar');
 //npm install mongoose@4.7.2 (latest version not work properly)!
 
 //seedDB();//seeding Database
