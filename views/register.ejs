@@ -1,0 +1,16 @@
+<% include partials/header %>
+<div class="container">
+<div class="jumbotron text-center">
+<h1>Sign Up</h1>
+    <form action="/register" method="POST">
+        Username: <input type="text" placeholder="username" name="username" autofocus required><br><br>
+        Password: <input type="password" placeholder="password" name="password"><br><br>
+        <div class="huge ui buttons">
+          <input type="reset" class="ui button">
+          <div class="or"></div>
+          <input type="submit" class="ui positive button">
+        </div>
+    </form>
+</div>
+</div>
+<% include partials/footer %>

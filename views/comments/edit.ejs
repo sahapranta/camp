@@ -1,0 +1,25 @@
+<% include ../partials/header %>
+
+<div class="container">
+    <div class="row">
+        
+          <h1 style="text-align:center;">Edit Your Comment </h1>
+                
+        <div style="margin:0 auto; width: 40%;">
+            <form action="/campground/<%= campground_id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+                <div class="input-group form-group">
+                    <label class="input-group-addon">Text</label>
+                    <input class="form-control" type="text" name="comment[text]" value="<%= comment.text %>" autofocus required>
+                </div> <!--end of input group for Title -->
+             
+                
+                <div class="form-group">    
+                    <button class="btn btn-lg btn-primary btn-block">Submit</button>
+                </div>
+            </form>
+            <a class="btn btn-default btn-sm text-right" href="/campground">Back</a>
+        </div> <!--end of style margin & width -->
+        
+        
+    </div> <!-- end of row-->
+</div> <!--end of container -->
