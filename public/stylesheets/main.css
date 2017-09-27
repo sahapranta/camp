@@ -1,3 +1,10 @@
+body {
+    background-image: url("http://res.cloudinary.com/sahapranta/image/upload/v1506524660/hksamacar_yskqe1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100%;
+    background-size:cover; 
+}
 .thumbnail img {
     width: 100%;
 }
